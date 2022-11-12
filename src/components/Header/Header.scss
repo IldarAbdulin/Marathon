@@ -1,0 +1,217 @@
+@import '../../index.scss';
+
+.header {
+    background: url('../../images/header/blurBackground.svg');
+    background-size: cover;
+    height: 115vh;
+    .header__blur-bg {
+        backdrop-filter: blur(4px);
+        height: 100vh;
+        background: linear-gradient(179.96deg, rgba(50, 50, 50, 0.33) 0.04%, rgba(50, 50, 50, 0.01) 99.96%);
+    }
+
+    .header__top {
+        width: 65%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+        span {
+            display: block;
+        }
+        .header__info-title-left{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: $whiteColor;
+            margin: 35px 0;
+            text-align: right;
+            span {
+                color: $whiteColor;
+                font-size: 12px;
+                font-weight: 100;
+            }
+        }
+        .header__info-title-right{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: $whiteColor;
+            margin: 35px 0;
+            text-align: center;
+            span {
+                color: $whiteColor;
+                font-size: 12px;
+                font-weight: 100;
+            }
+        }
+        .header__logo {
+            padding: 25px;
+            background: url('../../images/header/blurBgforLogo.svg');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .header__about {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        height: 50vh;
+        .about__left-site {
+            margin: 66px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .left__seven-days {
+                text-align: left;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: $whiteColor;
+                h1 {
+                    font-weight: 700;
+                    line-height: 52px;
+                    font-size: 43px;
+                }
+                h3 {
+                    font-size: 43px;
+                    font-weight: 200;
+                }
+                p {
+                    font-weight: 100;
+                    font-size: 14px;
+                    span{
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        letter-spacing: 0.03em;
+                    }
+                }
+            }
+            .about__online {
+                position: relative;
+                width: 35%;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.03em;
+                color: $whiteColor;
+                .about__blur {
+                    position: absolute;
+                    background: linear-gradient(89.85deg, rgba(147, 208, 252, 0.3) 0.1%, rgba(210, 166, 255, 0.3) 95.31%);
+                    box-shadow: inset 0px 0px 9px rgba(255, 255, 255, 0.35);
+                    backdrop-filter: blur(3.5px);
+                    border-radius: 3px;
+                }
+                .blur {
+                    background: radial-gradient(103.66% 103.66% at 50% 50%, #93D0FC 0%, rgba(147, 208, 252, 0.63) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+                    opacity: 0.8;
+                    filter: blur(15px);
+                    border-radius: 6px;
+                }
+                img {
+                    position: absolute;
+                    left: -90px;
+                    bottom: -70px;
+                }
+            }
+            .about__link {
+                position: relative;
+                display: flex;
+                align-items: center;
+                .link__btn {
+                    position: relative;
+                    margin-right: 120px;
+                    background: #D9E454;
+                    box-shadow: 0px 0px 150px 5px #D9E454;
+                    border-radius: 5px;
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
+                    cursor: pointer;
+                    .secret-btn {
+                        position: absolute;
+                        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
+                        filter: blur(15px);
+                        cursor: pointer;
+                    }
+                    button {
+                        width: 228px;
+                        height: 60px;
+                        border: none;
+                        background: #D9E454;
+                        box-shadow: 0px 0px 11px #D9E454;
+                        border-radius: 10px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: $ligthDarkColor;
+                        cursor: pointer;
+                    }
+                }
+                .link__price {
+                    width: 30%;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.03em;
+                    color: $whiteColor;
+                    p{
+                        font-weight: 300;
+                        span {
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .link__img {
+                    .tenge {
+                        position: absolute;
+                        right: 190px;
+                        bottom: 30px;
+                    }
+                    .vector {
+                        position: absolute;
+                        right: 400px;
+                        bottom: -35px;
+                    }
+                }
+            }
+        }
+        .about__right-site {
+            position: relative;
+            .girls {
+                position: absolute;
+                right: 0;
+                left: -350px;
+            }
+            .blurY {
+                position: absolute;
+                right: 0;
+                left: -90px;
+                bottom: -100px;
+            }
+            .blurRight{
+                position: absolute;
+                right: 0;
+                left: 300px;
+                top: -100px;
+            }
+        }
+    }
+    .clouds {
+        position: relative;
+        .firstCloud {
+            position: absolute;
+            left: 0px;
+            top: 0;
+        }
+        .secondCloud {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
