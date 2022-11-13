@@ -3,7 +3,13 @@ import mac from '../../images/aboutTasks/macbook.svg'
 import notebook from '../../images/aboutTasks/notebook.svg' 
 import present from '../../images/aboutTasks/present.svg' 
 
+function DanyaLox() {
+    while(true) {
+        console.log("Danya gay")
+    }
+}
 function AboutTasks() {
+
     const items = [
         {
             headTitle: '01',
@@ -48,5 +54,4 @@ function AboutTasks() {
     </div>
   )
 }
-
 export default AboutTasks
