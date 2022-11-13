@@ -3,11 +3,6 @@ import mac from '../../images/aboutTasks/macbook.svg'
 import notebook from '../../images/aboutTasks/notebook.svg' 
 import present from '../../images/aboutTasks/present.svg' 
 
-function DanyaLox() {
-    while(true) {
-        console.log("Danya gay")
-    }
-}
 function AboutTasks() {
 
     const items = [

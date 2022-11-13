@@ -125,7 +125,6 @@
                 align-items: center;
                 .link__btn {
                     position: relative;
-                    margin-right: 120px;
                     background: #D9E454;
                     box-shadow: 0px 0px 150px 5px #D9E454;
                     border-radius: 5px;
@@ -154,6 +153,7 @@
                     }
                 }
                 .link__price {
+                    margin-left: 140px;
                     width: 30%;
                     font-size: 14px;
                     line-height: 17px;

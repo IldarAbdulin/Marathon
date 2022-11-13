@@ -1,4 +1,3 @@
-import './App.scss';
 import { Routes, Route } from 'react-router-dom'
 
 import SignInForm from './routers/SignInForm';
