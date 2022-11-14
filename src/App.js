@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 
-import SignInForm from './routers/SignInForm';
+import SignInForm from './router/SignInForm';
 import Main from './components/MainComponent/Main';
 
 function App() {
@@ -13,5 +13,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

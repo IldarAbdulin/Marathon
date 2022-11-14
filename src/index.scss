@@ -25,3 +25,16 @@ $darkColor: #232323;
         background: #000;
     }
 }
+.clouds {
+    position: relative;
+    .firstCloud {
+        position: absolute;
+        left: 0px;
+        top: 0;
+    }
+    .secondCloud {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
