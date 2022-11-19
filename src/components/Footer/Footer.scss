@@ -1,3 +1,4 @@
+@import '../../index.scss' ; 
 .footer {
     padding: 350px 0;
     background: url('../../images/footer/bgfoot.jpg');
@@ -45,13 +46,116 @@
         .timer__about {
             display: flex;
             justify-content: center;
-            gap: 0 70px;
             p {
+                margin: 0 35px;
                 font-style: italic;
                 font-weight: 400;
                 font-size: 17px;
                 line-height: 21px;
                 text-transform: uppercase;
+            }
+        }
+    }
+    .about__link {
+        padding: 88px 0;
+        margin: 0 0 0 400px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .link__inst {
+            margin: 0 30px 0 0;
+        }
+        .link__btn {
+            position: relative;
+            background: #D9E454;
+            box-shadow: 0px 0px 150px 5px #D9E454;
+            border-radius: 5px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
+            cursor: pointer;
+            .secret-btn {
+                position: absolute;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
+                filter: blur(15px);
+                cursor: pointer;
+            }
+            button {
+                width: 228px;
+                height: 60px;
+                border: none;
+                background: #D9E454;
+                box-shadow: 0px 0px 11px #D9E454;
+                border-radius: 10px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: $ligthDarkColor;
+                cursor: pointer;
+            }
+        }
+        .link__price {
+            margin-left: 100px;
+            width: 25%;
+            color: $whiteColor;
+            p{
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.03em;
+                font-weight: 200;
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+        .link__img {
+            .tenge {
+                position: absolute;
+                right: 150px;
+                bottom: 130px;
+            }
+            .vector {
+                position: absolute;
+                right: 400px;
+                bottom: 50px;
+            }
+        }
+    }
+    .footer__nav {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .nav-center {
+            h3 {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: right;
+                letter-spacing: 0.03em;
+                color: $whiteColor;
+            }
+        }
+        .nav-right {
+            p {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: right;
+                letter-spacing: 0.03em;
+                color: $whiteColor;
+            }
+            .link {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: right;
+                letter-spacing: 0.03em;
+                text-decoration-line: underline;
+                color: #FFFFFF;
             }
         }
     }
